@@ -67,10 +67,10 @@
 				<decelerationBrake>8.7</decelerationBrake>
 			</brake>
 			<wheelbase>2.9</wheelbase>
-			<turningCircle>11.9</turningCircle> 
-			
+			<turningCircle>11.9</turningCircle>
+
 		<autoPilot>
-			<enabled>false</enabled>
+			<enabled>true</enabled>
 			<minDistanceFromPath>2.0</minDistanceFromPath>
 			<maxDistanceFromPath>5.0</maxDistanceFromPath>
 			<curveTension>0.001</curveTension>
@@ -87,7 +87,7 @@
 				<wayPoint id="WayPoint_7"><translation><vector jtype="java_lang_Float" size="3"><entry>-33.760365</entry><entry>0.115561865</entry><entry>767.5245</entry></vector></translation><speed>70</speed></wayPoint>
 			</wayPoints>
 		</autoPilot>
-			
+
 		</car>
 	</driver>
 
