@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene xmlns="http://opends.eu/drivingtask/scene"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://opends.eu/drivingtask/scene ../../Schema/scene.xsd">
+        
+    <sounds>
+    </sounds>
+    
+     
+	<models>
+        
+        <model id="grassPlane" key="Scenes/grassPlane/Scene.j3o">
+            <mass>0</mass>
+            <visible>true</visible>
+            <collisionShape>meshShape</collisionShape>
+            <scale>
+                <vector jtype="java_lang_Float" size="3">
+                    <entry>1.5</entry>
+                    <entry>1</entry>
+                    <entry>1.5</entry>
+                </vector>
+            </scale>
+
+            <rotation quaternion="false">
+                <vector jtype="java_lang_Float" size="3">
+                    <entry>0</entry>
+                    <entry>0</entry>
+                    <entry>0</entry>
+                </vector>
+            </rotation>
+
+            <translation>
+                <vector jtype="java_lang_Float" size="3">
+                    <entry>0</entry>
+                    <entry>0.5</entry>
+                    <entry>0</entry>
+                </vector>
+            </translation>
+        </model>
+		
+		<model id="driverCar" key="Models/Cars/drivingCars/bmw1/Car.j3o">
+			<mass>800</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+	
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+	
+
+   			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>90</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+			
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>0</entry>
+					<entry>2.0</entry>
+				</vector>
+			</translation>
+
+<!-- 	
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>-36</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>20.6</entry>
+					<entry>0</entry>
+					<entry>-2366.5</entry>
+				</vector>
+			</translation>
+-->			
+		<!-- 
+		 
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>1</entry>
+					<entry>0</entry>
+				</vector>
+			</translation>
+		 -->	
+		</model>
+		
+		<model id="SpeedLimit80_1" key="Models/RoadSigns/speedLimits/speedLimit80/speedLimit80.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>-144.43204</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-41.925888</entry><entry>-0.45401636</entry><entry>-2439.4612</entry></vector></translation></model>
+		<model id="SpeedLimit50_1" key="Models/RoadSigns/speedLimits/speedLimit50/speedLimit50.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>36.31983</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-32.859257</entry><entry>-0.45401558</entry><entry>-2445.9507</entry></vector></translation></model>
+		<model id="SpeedLimit30_1" key="Models/RoadSigns/speedLimits/speedLimit30/speedLimit30.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>126.44021</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-225.0471</entry><entry>-0.45405066</entry><entry>-2355.2993</entry></vector></translation></model>
+		<model id="SpeedLimit50_2" key="Models/RoadSigns/speedLimits/speedLimit50/speedLimit50.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>138.31532</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-372.6681</entry><entry>-0.4540355</entry><entry>-2227.1104</entry></vector></translation></model>
+		<model id="SpeedLimit30_2" key="Models/RoadSigns/speedLimits/speedLimit30/speedLimit30.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>-41.47786</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-363.8969</entry><entry>-0.45403728</entry><entry>-2219.2764</entry></vector></translation></model>
+		<model id="SpeedLimit50_3" key="Models/RoadSigns/speedLimits/speedLimit50/speedLimit50.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.0</entry><entry>1.0</entry><entry>1.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>-53.488556</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-218.19165</entry><entry>-0.45403704</entry><entry>-2345.92</entry></vector></translation></model>
+		
+	</models>
+
+	<resetPoints>
+		<resetPoint id="reset1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>413</entry>
+					<entry>0.5</entry>
+					<entry>-428</entry>
+				</vector>
+			</translation>
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		</resetPoint>
+		
+		<resetPoint id="reset2">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1139</entry>
+					<entry>0.5</entry>
+					<entry>-1047</entry>
+				</vector>
+			</translation>
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		</resetPoint>
+		
+		<resetPoint id="reset3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-115</entry>
+					<entry>0.5</entry>
+					<entry>-2512</entry>
+				</vector>
+			</translation>
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		</resetPoint>
+		
+		<resetPoint id="reset4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1.4733431</entry>
+					<entry>0.5</entry>
+					<entry>-2421.26</entry>
+				</vector>
+			</translation>
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>10</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		</resetPoint>
+
+		<resetPoint id="reset5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>129.99362</entry>
+					<entry>0.5</entry>
+					<entry>-2416.4912</entry>
+				</vector>
+			</translation>
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>90</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		</resetPoint>
+	</resetPoints>
+	
+    <geometries>
+    </geometries>
+    
+    <gravity>9.81</gravity>
+    
+    <time>19:00:12</time>
+    
+    <date>2010-11-25</date>
+	
+		<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+	</lights>
+
+</scene>

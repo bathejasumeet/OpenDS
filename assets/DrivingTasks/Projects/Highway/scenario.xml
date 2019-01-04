@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://opends.eu/drivingtask/scenario"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://opends.eu/drivingtask/scenario ../../Schema/scenario.xsd">
+
+	<environment>
+		<weather>
+			<snowingPercentage>0</snowingPercentage>
+			<rainingPercentage>0</rainingPercentage>
+			<fogPercentage>0</fogPercentage>
+		</weather>
+	</environment>
+
+	
+	
+	<driver>
+		<car id="" ref="driverCar" profile="">
+			<tires profile="">
+				<type>summer</type>
+				<size>16</size>
+			</tires>
+			<engine profile="">
+				<engineOn>false</engineOn>
+				<minSpeed>0</minSpeed>
+				<maxSpeed>180</maxSpeed>
+				<acceleration>3.3</acceleration>
+				<minRPM>750</minRPM>
+				<maxRPM>7500</maxRPM>
+			</engine>
+			<transmission>
+				<automatic>true</automatic>
+				<reverse>3.182</reverse>
+				<forward>
+					<vector jtype="java_lang_Float" size="6">
+						<entry>3.615</entry>
+						<entry>1.955</entry>
+						<entry>1.281</entry>
+						<entry>0.973</entry>
+						<entry>0.778</entry>
+						<entry>0.646</entry>
+					</vector>
+				</forward>
+			</transmission>
+			<suspension>
+				<stiffness>120</stiffness>
+				<compression>0.2</compression>
+				<damping>0.3</damping>
+			</suspension>
+			<wheel>
+				<frictionSlip>50</frictionSlip>
+			</wheel>
+			<brake profile="">
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<decelerationBrake>8.7</decelerationBrake>
+			</brake>
+			<cruiseControl>
+				<acc>true</acc>
+				<emergencyBrakeDistance>25</emergencyBrakeDistance>
+				<initialSpeed>0</initialSpeed>
+				<safetyDistance>
+					<lateral>2</lateral>
+					<forward>30</forward>
+				</safetyDistance>
+				<suppressDeactivationByBrake>true</suppressDeactivationByBrake>
+			</cruiseControl>
+			
+		</car>
+	</driver>
+
+	<traffic>
+ 
+		
+
+		<!-- Get in lane cars-->	
+
+
+		<vehicle id="car1">
+			<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+			<!--<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>-->
+			<mass>800</mass>
+			<acceleration>6.0</acceleration>
+			<decelerationBrake>8.7</decelerationBrake>
+			<decelerationFreeWheel>2.0</decelerationFreeWheel>
+			<engineOn>true</engineOn>
+			<maxDistanceFromPath>5.0</maxDistanceFromPath>
+			<curveTension>0.001</curveTension>
+			<pathIsCycle>true</pathIsCycle>
+			<pathIsVisible>false</pathIsVisible>
+			<startWayPoint>WayPoint_1</startWayPoint>
+			<wayPoints>
+<wayPoint id="WayPoint_1"> <translation><vector jtype="java_lang_Float" size="3"><entry>-520.5924</entry><entry>0.1</entry><entry>10.650283</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_2"> <translation><vector jtype="java_lang_Float" size="3"><entry>-559.22437</entry><entry>0.1894936</entry><entry>10.315319</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_3"> <translation><vector jtype="java_lang_Float" size="3"><entry>-603.13275</entry><entry>0.189484</entry><entry>10.289382</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_4"> <translation><vector jtype="java_lang_Float" size="3"><entry>-652.0452</entry><entry>0.1894874</entry><entry>10.287553</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_5"> <translation><vector jtype="java_lang_Float" size="3"><entry>-712.8231</entry><entry>0.1894957</entry><entry>10.3398485</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_6"> <translation><vector jtype="java_lang_Float" size="3"><entry>-826.9774</entry><entry>0.189479</entry><entry>10.32663</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_7"> <translation><vector jtype="java_lang_Float" size="3"><entry>-841.4718</entry><entry>0.189475</entry><entry>10.359959</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_8"> <translation><vector jtype="java_lang_Float" size="3"><entry>-852.23785</entry><entry>0.1895002</entry><entry>10.441486</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_9"> <translation><vector jtype="java_lang_Float" size="3"><entry>-857.049</entry><entry>0.1894758</entry><entry>10.543705</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_10"> <translation><vector jtype="java_lang_Float" size="3"><entry>-861.3674</entry><entry>0.1894758</entry><entry>10.883215</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_11"> <translation><vector jtype="java_lang_Float" size="3"><entry>-865.8299</entry><entry>0.1894823</entry><entry>11.275484</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_12"> <translation><vector jtype="java_lang_Float" size="3"><entry>-870.3461</entry><entry>0.189459</entry><entry>11.6600685</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_13"> <translation><vector jtype="java_lang_Float" size="3"><entry>-875.5942</entry><entry>0.1894936</entry><entry>12.56481</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_14"> <translation><vector jtype="java_lang_Float" size="3"><entry>-879.9969</entry><entry>0.1894912</entry><entry>13.149065</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_15"> <translation><vector jtype="java_lang_Float" size="3"><entry>-884.6453</entry><entry>0.1894775</entry><entry>14.135923</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_16"> <translation><vector jtype="java_lang_Float" size="3"><entry>-889.1252</entry><entry>0.1894608</entry><entry>15.248859</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_17"> <translation><vector jtype="java_lang_Float" size="3"><entry>-895.7631</entry><entry>0.189492</entry><entry>16.908854</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_18"> <translation><vector jtype="java_lang_Float" size="3"><entry>-899.9828</entry><entry>0.189473</entry><entry>18.428883</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_19"> <translation><vector jtype="java_lang_Float" size="3"><entry>-904.2724</entry><entry>0.1894588</entry><entry>19.989092</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_20"> <translation><vector jtype="java_lang_Float" size="3"><entry>-908.35046</entry><entry>0.189479</entry><entry>21.800793</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_21"> <translation><vector jtype="java_lang_Float" size="3"><entry>-913.7646</entry><entry>0.1894907</entry><entry>24.185276</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_22"> <translation><vector jtype="java_lang_Float" size="3"><entry>-919.7582</entry><entry>0.1894567</entry><entry>27.065538</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_23"> <translation><vector jtype="java_lang_Float" size="3"><entry>-925.136</entry><entry>0.1894707</entry><entry>30.3388</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_24"> <translation><vector jtype="java_lang_Float" size="3"><entry>-931.0106</entry><entry>0.189484</entry><entry>33.928806</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_25"> <translation><vector jtype="java_lang_Float" size="3"><entry>-938.9154</entry><entry>0.1894883</entry><entry>39.58605</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_26"> <translation><vector jtype="java_lang_Float" size="3"><entry>-943.1544</entry><entry>0.1894936</entry><entry>43.128002</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_27"> <translation><vector jtype="java_lang_Float" size="3"><entry>-947.1011</entry><entry>0.1894704</entry><entry>46.640026</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_28"> <translation><vector jtype="java_lang_Float" size="3"><entry>-950.92126</entry><entry>0.1894778</entry><entry>50.387985</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_29"> <translation><vector jtype="java_lang_Float" size="3"><entry>-956.34644</entry><entry>0.1894823</entry><entry>56.05875</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_30"> <translation><vector jtype="java_lang_Float" size="3"><entry>-960.05444</entry><entry>0.1894862</entry><entry>60.642258</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_31"> <translation><vector jtype="java_lang_Float" size="3"><entry>-963.723</entry><entry>0.1894692</entry><entry>65.33783</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_32"> <translation><vector jtype="java_lang_Float" size="3"><entry>-966.73956</entry><entry>0.1894865</entry><entry>69.500084</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_33"> <translation><vector jtype="java_lang_Float" size="3"><entry>-969.4704</entry><entry>0.1894683</entry><entry>73.900375</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_34"> <translation><vector jtype="java_lang_Float" size="3"><entry>-971.8766</entry><entry>0.1894832</entry><entry>77.87205</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_35"> <translation><vector jtype="java_lang_Float" size="3"><entry>-973.80304</entry><entry>0.1894686</entry><entry>81.764046</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_36"> <translation><vector jtype="java_lang_Float" size="3"><entry>-976.55615</entry><entry>0.189474</entry><entry>87.26123</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_37"> <translation><vector jtype="java_lang_Float" size="3"><entry>-978.8593</entry><entry>0.189478</entry><entry>92.22184</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_38"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.5335</entry><entry>0.1894752</entry><entry>96.58763</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_39"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.0536</entry><entry>0.1894674</entry><entry>100.70849</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_40"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.8938</entry><entry>0.189481</entry><entry>106.095146</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_41"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.23</entry><entry>0.189474</entry><entry>110.989426</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_42"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.15344</entry><entry>0.1894814</entry><entry>114.930084</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_43"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.29443</entry><entry>0.1894805</entry><entry>119.80297</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_44"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.3749</entry><entry>0.1894775</entry><entry>126.2142</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_45"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.85583</entry><entry>0.1</entry><entry>130.94531</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_46"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.40936</entry><entry>0.1894766</entry><entry>136.5768</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_47"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.75964</entry><entry>0.1894728</entry><entry>143.28528</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_48"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.7845</entry><entry>0.1894755</entry><entry>148.2772</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_49"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.49426</entry><entry>0.1894817</entry><entry>154.5642</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_50"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.85284</entry><entry>0.1894787</entry><entry>171.83728</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_51"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.7912</entry><entry>0.189478</entry><entry>194.12563</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_52"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.8261</entry><entry>0.1894734</entry><entry>215.95259</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_53"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.5734</entry><entry>0.1894814</entry><entry>247.00534</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_54"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.0776</entry><entry>0.189481</entry><entry>264.0081</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_55"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.40106</entry><entry>0.1894766</entry><entry>284.63705</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_56"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.94147</entry><entry>0.1894737</entry><entry>298.9052</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_57"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.30164</entry><entry>0.1894766</entry><entry>317.1698</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_58"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.8298</entry><entry>0.1894918</entry><entry>338.43924</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_59"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.5223</entry><entry>0.1894832</entry><entry>358.47357</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_60"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.8679</entry><entry>0.189477</entry><entry>381.00488</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_61"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.28815</entry><entry>0.189481</entry><entry>406.88882</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_62"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.0845</entry><entry>0.1894662</entry><entry>424.7063</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_63"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.7915</entry><entry>0.1894936</entry><entry>442.6624</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_64"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.58606</entry><entry>0.189481</entry><entry>466.95984</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_65"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.2796</entry><entry>0.1894793</entry><entry>486.28284</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_66"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.21014</entry><entry>0.18947</entry><entry>503.58737</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_67"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.1121</entry><entry>0.189471</entry><entry>522.46594</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_68"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.0414</entry><entry>0.189489</entry><entry>559.13306</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_69"> <translation><vector jtype="java_lang_Float" size="3"><entry>-979.88153</entry><entry>0.1894978</entry><entry>586.7173</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_70"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.0375</entry><entry>0.1894877</entry><entry>599.6284</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_71"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.1385</entry><entry>0.1894868</entry><entry>622.65656</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_72"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.25</entry><entry>0.189481</entry><entry>645.8625</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_73"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.334</entry><entry>0.1894936</entry><entry>663.7992</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_74"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.43066</entry><entry>0.1894907</entry><entry>682.56525</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_75"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.68774</entry><entry>0.1895014</entry><entry>702.68317</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_76"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.0396</entry><entry>0.1894793</entry><entry>724.317</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_77"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.296</entry><entry>0.1894865</entry><entry>746.2896</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_78"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.57666</entry><entry>0.1895017</entry><entry>761.0995</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_79"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.8729</entry><entry>0.1894847</entry><entry>780.41705</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_80"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.13635</entry><entry>0.189484</entry><entry>796.8725</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_81"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.381</entry><entry>0.189488</entry><entry>812.15894</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_82"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.7221</entry><entry>0.1894853</entry><entry>838.36145</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_83"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.0797</entry><entry>0.1894862</entry><entry>852.47064</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_84"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.31616</entry><entry>0.189489</entry><entry>877.6326</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_85"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.5322</entry><entry>0.1894954</entry><entry>893.4214</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_86"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.9714</entry><entry>0.189499</entry><entry>913.52325</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_87"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.47565</entry><entry>0.1894847</entry><entry>937.8128</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_88"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.8634</entry><entry>0.1894892</entry><entry>955.48694</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_89"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.2225</entry><entry>0.1894778</entry><entry>971.94904</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_90"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.4444</entry><entry>0.1894892</entry><entry>984.0095</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_91"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.70917</entry><entry>0.1894895</entry><entry>1000.9209</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_92"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.00195</entry><entry>0.1894865</entry><entry>1019.9713</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_93"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.2206</entry><entry>0.1894912</entry><entry>1033.423</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_94"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.37744</entry><entry>0.1894826</entry><entry>1043.3325</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_95"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.7171</entry><entry>0.1894924</entry><entry>1055.7339</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_96"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.23016</entry><entry>0.189469</entry><entry>1076.8135</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_97"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.4088</entry><entry>0.189496</entry><entry>1091.3044</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_98"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.7778</entry><entry>0.1894918</entry><entry>1117.3885</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_99"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.0053</entry><entry>0.1894936</entry><entry>1132.7661</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_100"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.2632</entry><entry>0.1895008</entry><entry>1150.2899</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_101"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.5839</entry><entry>0.1894856</entry><entry>1171.2803</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_102"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.8902</entry><entry>-0.33236116</entry><entry>1192.9902</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_103"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.28204</entry><entry>0.1203198</entry><entry>1212.2902</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_104"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.3369</entry><entry>0.1894758</entry><entry>1234.8602</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_105"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.3911</entry><entry>0.1895097</entry><entry>1254.7644</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_106"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.77936</entry><entry>0.1895166</entry><entry>1276.5612</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_107"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.1575</entry><entry>0.1895047</entry><entry>1303.0226</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_108"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.15607</entry><entry>0.1894802</entry><entry>1321.2865</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_109"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.156</entry><entry>0.1894865</entry><entry>1345.0453</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_110"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.83844</entry><entry>0.1894644</entry><entry>1355.164</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_111"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.2525</entry><entry>0.1894582</entry><entry>1362.0559</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_112"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.7831</entry><entry>0.1894912</entry><entry>1368.1637</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_113"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.6826</entry><entry>0.1894638</entry><entry>1376.161</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_114"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.0218</entry><entry>0.1894293</entry><entry>1380.6653</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_115"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.96857</entry><entry>0.1895115</entry><entry>1386.2404</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_116"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.9362</entry><entry>0.1895088</entry><entry>1391.1586</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_117"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.2666</entry><entry>0.189484</entry><entry>1397.7914</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_118"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.1772</entry><entry>0.1894877</entry><entry>1401.348</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_119"> <translation><vector jtype="java_lang_Float" size="3"><entry>-980.19904</entry><entry>0.1894668</entry><entry>1407.9695</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_120"> <translation><vector jtype="java_lang_Float" size="3"><entry>-978.1241</entry><entry>0.1894647</entry><entry>1413.4598</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_121"> <translation><vector jtype="java_lang_Float" size="3"><entry>-974.67694</entry><entry>0.189478</entry><entry>1421.2272</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_122"> <translation><vector jtype="java_lang_Float" size="3"><entry>-971.4289</entry><entry>0.1895061</entry><entry>1427.598</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_123"> <translation><vector jtype="java_lang_Float" size="3"><entry>-967.8003</entry><entry>0.1894662</entry><entry>1433.9847</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_124"> <translation><vector jtype="java_lang_Float" size="3"><entry>-962.70667</entry><entry>0.189493</entry><entry>1441.1056</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_125"> <translation><vector jtype="java_lang_Float" size="3"><entry>-957.9092</entry><entry>0.1894793</entry><entry>1447.3551</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_126"> <translation><vector jtype="java_lang_Float" size="3"><entry>-953.0445</entry><entry>0.1894483</entry><entry>1452.6061</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_127"> <translation><vector jtype="java_lang_Float" size="3"><entry>-948.5868</entry><entry>0.1895073</entry><entry>1456.8914</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_128"> <translation><vector jtype="java_lang_Float" size="3"><entry>-944.03156</entry><entry>0.1894775</entry><entry>1460.4188</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_129"> <translation><vector jtype="java_lang_Float" size="3"><entry>-938.4979</entry><entry>0.189454</entry><entry>1464.5154</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_130"> <translation><vector jtype="java_lang_Float" size="3"><entry>-933.7969</entry><entry>0.1895</entry><entry>1467.6664</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_131"> <translation><vector jtype="java_lang_Float" size="3"><entry>-928.5434</entry><entry>0.1894746</entry><entry>1470.787</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_132"> <translation><vector jtype="java_lang_Float" size="3"><entry>-922.26605</entry><entry>0.1894427</entry><entry>1473.9246</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_133"> <translation><vector jtype="java_lang_Float" size="3"><entry>-912.86755</entry><entry>0.1894644</entry><entry>1478.113</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_134"> <translation><vector jtype="java_lang_Float" size="3"><entry>-904.3974</entry><entry>0.189484</entry><entry>1481.1294</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_135"> <translation><vector jtype="java_lang_Float" size="3"><entry>-896.1713</entry><entry>0.1894704</entry><entry>1483.4349</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_136"> <translation><vector jtype="java_lang_Float" size="3"><entry>-892.3413</entry><entry>0.1894626</entry><entry>1484.4357</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_137"> <translation><vector jtype="java_lang_Float" size="3"><entry>-886.87646</entry><entry>0.1894543</entry><entry>1485.6044</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_138"> <translation><vector jtype="java_lang_Float" size="3"><entry>-881.3599</entry><entry>0.1894924</entry><entry>1486.5874</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_139"> <translation><vector jtype="java_lang_Float" size="3"><entry>-875.8086</entry><entry>0.1894835</entry><entry>1487.5103</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_140"> <translation><vector jtype="java_lang_Float" size="3"><entry>-870.80597</entry><entry>0.1894758</entry><entry>1488.0823</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_141"> <translation><vector jtype="java_lang_Float" size="3"><entry>-865.6594</entry><entry>0.1894868</entry><entry>1488.7861</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_142"> <translation><vector jtype="java_lang_Float" size="3"><entry>-858.5327</entry><entry>0.1894704</entry><entry>1489.393</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_143"> <translation><vector jtype="java_lang_Float" size="3"><entry>-850.8712</entry><entry>0.1894686</entry><entry>1489.9032</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_144"> <translation><vector jtype="java_lang_Float" size="3"><entry>-844.0236</entry><entry>0.189493</entry><entry>1489.8652</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_145"> <translation><vector jtype="java_lang_Float" size="3"><entry>-794.17706</entry><entry>0.18948</entry><entry>1490.1042</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_146"> <translation><vector jtype="java_lang_Float" size="3"><entry>-702.46454</entry><entry>0.189484</entry><entry>1489.9117</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_147"> <translation><vector jtype="java_lang_Float" size="3"><entry>-585.1874</entry><entry>0.1894895</entry><entry>1490.0878</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_148"> <translation><vector jtype="java_lang_Float" size="3"><entry>-486.79175</entry><entry>0.1894892</entry><entry>1490.0615</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_149"> <translation><vector jtype="java_lang_Float" size="3"><entry>-379.28827</entry><entry>0.1894832</entry><entry>1490.067</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_150"> <translation><vector jtype="java_lang_Float" size="3"><entry>-310.3691</entry><entry>0.1894856</entry><entry>1490.067</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_151"> <translation><vector jtype="java_lang_Float" size="3"><entry>-150.08911</entry><entry>0.189481</entry><entry>1490.0547</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_152"> <translation><vector jtype="java_lang_Float" size="3"><entry>-143.01118</entry><entry>0.1894787</entry><entry>1489.7048</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_153"> <translation><vector jtype="java_lang_Float" size="3"><entry>-134.29527</entry><entry>0.1894805</entry><entry>1489.245</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_154"> <translation><vector jtype="java_lang_Float" size="3"><entry>-126.793045</entry><entry>0.189477</entry><entry>1488.7089</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_155"> <translation><vector jtype="java_lang_Float" size="3"><entry>-117.469955</entry><entry>0.1894796</entry><entry>1487.6675</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_156"> <translation><vector jtype="java_lang_Float" size="3"><entry>-107.17207</entry><entry>0.1894817</entry><entry>1486.4381</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_157"> <translation><vector jtype="java_lang_Float" size="3"><entry>-99.5266</entry><entry>0.1894758</entry><entry>1484.9783</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_158"> <translation><vector jtype="java_lang_Float" size="3"><entry>-94.0916</entry><entry>0.189483</entry><entry>1483.8618</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_159"> <translation><vector jtype="java_lang_Float" size="3"><entry>-89.76346</entry><entry>0.1894865</entry><entry>1482.8389</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_160"> <translation><vector jtype="java_lang_Float" size="3"><entry>-83.07569</entry><entry>0.189482</entry><entry>1481.0702</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_161"> <translation><vector jtype="java_lang_Float" size="3"><entry>-79.244736</entry><entry>0.1894832</entry><entry>1479.8842</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_162"> <translation><vector jtype="java_lang_Float" size="3"><entry>-73.7755</entry><entry>0.1894692</entry><entry>1478.1829</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_163"> <translation><vector jtype="java_lang_Float" size="3"><entry>-69.211945</entry><entry>0.1894752</entry><entry>1476.4829</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_164"> <translation><vector jtype="java_lang_Float" size="3"><entry>-65.899254</entry><entry>0.1894713</entry><entry>1475.0339</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_165"> <translation><vector jtype="java_lang_Float" size="3"><entry>-62.055904</entry><entry>0.1894787</entry><entry>1473.3582</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_166"> <translation><vector jtype="java_lang_Float" size="3"><entry>-57.254547</entry><entry>0.1894898</entry><entry>1470.9762</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_167"> <translation><vector jtype="java_lang_Float" size="3"><entry>-54.471752</entry><entry>0.1894787</entry><entry>1469.5422</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_168"> <translation><vector jtype="java_lang_Float" size="3"><entry>-50.861687</entry><entry>0.1</entry><entry>1467.4467</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_169"> <translation><vector jtype="java_lang_Float" size="3"><entry>-46.193985</entry><entry>0.1894823</entry><entry>1464.3352</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_170"> <translation><vector jtype="java_lang_Float" size="3"><entry>-43.078278</entry><entry>0.1894787</entry><entry>1461.856</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_171"> <translation><vector jtype="java_lang_Float" size="3"><entry>-37.752937</entry><entry>0.1894847</entry><entry>1457.5951</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_172"> <translation><vector jtype="java_lang_Float" size="3"><entry>-33.62063</entry><entry>0.189488</entry><entry>1453.7649</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_173"> <translation><vector jtype="java_lang_Float" size="3"><entry>-31.771482</entry><entry>0.1894895</entry><entry>1451.765</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_174"> <translation><vector jtype="java_lang_Float" size="3"><entry>-29.177473</entry><entry>0.1895097</entry><entry>1448.9608</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_175"> <translation><vector jtype="java_lang_Float" size="3"><entry>-26.758572</entry><entry>0.1895056</entry><entry>1445.847</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_176"> <translation><vector jtype="java_lang_Float" size="3"><entry>-24.592607</entry><entry>0.1895097</entry><entry>1442.8242</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_177"> <translation><vector jtype="java_lang_Float" size="3"><entry>-22.559767</entry><entry>0.1894877</entry><entry>1439.5771</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_178"> <translation><vector jtype="java_lang_Float" size="3"><entry>-20.798784</entry><entry>0.189496</entry><entry>1436.4482</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_179"> <translation><vector jtype="java_lang_Float" size="3"><entry>-17.989712</entry><entry>0.189493</entry><entry>1430.9578</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_180"> <translation><vector jtype="java_lang_Float" size="3"><entry>-16.537308</entry><entry>0.1894826</entry><entry>1427.1064</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_181"> <translation><vector jtype="java_lang_Float" size="3"><entry>-14.650321</entry><entry>0.1894924</entry><entry>1422.0865</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_182"> <translation><vector jtype="java_lang_Float" size="3"><entry>-13.393227</entry><entry>0.1894674</entry><entry>1417.6165</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_183"> <translation><vector jtype="java_lang_Float" size="3"><entry>-12.618513</entry><entry>0.189481</entry><entry>1414.1938</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_184"> <translation><vector jtype="java_lang_Float" size="3"><entry>-11.4978075</entry><entry>0.189447</entry><entry>1408.2556</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_185"> <translation><vector jtype="java_lang_Float" size="3"><entry>-10.688464</entry><entry>0.1894528</entry><entry>1402.7463</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_186"> <translation><vector jtype="java_lang_Float" size="3"><entry>-10.047734</entry><entry>0.1894904</entry><entry>1395.3407</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_187"> <translation><vector jtype="java_lang_Float" size="3"><entry>-9.78225</entry><entry>0.1894912</entry><entry>1386.841</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_188"> <translation><vector jtype="java_lang_Float" size="3"><entry>-9.979186</entry><entry>0.1894877</entry><entry>1379.7186</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_189"> <translation><vector jtype="java_lang_Float" size="3"><entry>-10.686958</entry><entry>0.1894826</entry><entry>1371.1921</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_190"> <translation><vector jtype="java_lang_Float" size="3"><entry>-11.47476</entry><entry>0.189467</entry><entry>1364.8184</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_191"> <translation><vector jtype="java_lang_Float" size="3"><entry>-12.858734</entry><entry>0.1894716</entry><entry>1356.2057</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_192"> <translation><vector jtype="java_lang_Float" size="3"><entry>-14.467661</entry><entry>0.189498</entry><entry>1347.3202</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_193"> <translation><vector jtype="java_lang_Float" size="3"><entry>-17.239182</entry><entry>0.1894927</entry><entry>1332.1344</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_194"> <translation><vector jtype="java_lang_Float" size="3"><entry>-19.138218</entry><entry>0.1894936</entry><entry>1321.2574</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_195"> <translation><vector jtype="java_lang_Float" size="3"><entry>-24.058857</entry><entry>0.189498</entry><entry>1292.4321</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_196"> <translation><vector jtype="java_lang_Float" size="3"><entry>-25.927315</entry><entry>0.189446</entry><entry>1280.9948</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_197"> <translation><vector jtype="java_lang_Float" size="3"><entry>-32.80129</entry><entry>0.1895035</entry><entry>1243.1477</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_198"> <translation><vector jtype="java_lang_Float" size="3"><entry>-38.898975</entry><entry>0.1894543</entry><entry>1206.6216</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_199"> <translation><vector jtype="java_lang_Float" size="3"><entry>-43.04104</entry><entry>0.1894966</entry><entry>1181.781</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_200"> <translation><vector jtype="java_lang_Float" size="3"><entry>-46.753853</entry><entry>0.1894465</entry><entry>1158.8707</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_201"> <translation><vector jtype="java_lang_Float" size="3"><entry>-52.325314</entry><entry>0.1894513</entry><entry>1124.8466</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_202"> <translation><vector jtype="java_lang_Float" size="3"><entry>-55.558407</entry><entry>0.1894328</entry><entry>1103.3103</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_203"> <translation><vector jtype="java_lang_Float" size="3"><entry>-58.03486</entry><entry>0.189459</entry><entry>1085.9115</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_204"> <translation><vector jtype="java_lang_Float" size="3"><entry>-60.950264</entry><entry>0.1894415</entry><entry>1065.4001</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_205"> <translation><vector jtype="java_lang_Float" size="3"><entry>-63.661148</entry><entry>0.189446</entry><entry>1045.5402</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_206"> <translation><vector jtype="java_lang_Float" size="3"><entry>-66.02179</entry><entry>0.1894608</entry><entry>1026.0846</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_207"> <translation><vector jtype="java_lang_Float" size="3"><entry>-67.81435</entry><entry>0.1894632</entry><entry>1009.04425</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_208"> <translation><vector jtype="java_lang_Float" size="3"><entry>-69.16162</entry><entry>0.189465</entry><entry>995.05286</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_209"> <translation><vector jtype="java_lang_Float" size="3"><entry>-71.33338</entry><entry>0.189462</entry><entry>971.2838</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_210"> <translation><vector jtype="java_lang_Float" size="3"><entry>-73.121155</entry><entry>0.1894805</entry><entry>946.348</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_211"> <translation><vector jtype="java_lang_Float" size="3"><entry>-73.6685</entry><entry>0.1894653</entry><entry>934.9607</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_212"> <translation><vector jtype="java_lang_Float" size="3"><entry>-74.3069</entry><entry>0.189462</entry><entry>918.063</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_213"> <translation><vector jtype="java_lang_Float" size="3"><entry>-75.21125</entry><entry>0.189471</entry><entry>896.7905</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_214"> <translation><vector jtype="java_lang_Float" size="3"><entry>-75.5186</entry><entry>0.1894817</entry><entry>878.897</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_215"> <translation><vector jtype="java_lang_Float" size="3"><entry>-75.70567</entry><entry>0.1894912</entry><entry>858.3678</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_216"> <translation><vector jtype="java_lang_Float" size="3"><entry>-75.734314</entry><entry>0.189484</entry><entry>839.57916</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_217"> <translation><vector jtype="java_lang_Float" size="3"><entry>-75.33783</entry><entry>0.1894984</entry><entry>817.1072</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_218"> <translation><vector jtype="java_lang_Float" size="3"><entry>-74.8817</entry><entry>0.1894954</entry><entry>800.2495</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_219"> <translation><vector jtype="java_lang_Float" size="3"><entry>-74.15419</entry><entry>0.1894853</entry><entry>779.35547</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_220"> <translation><vector jtype="java_lang_Float" size="3"><entry>-73.301506</entry><entry>0.1894704</entry><entry>760.7553</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_221"> <translation><vector jtype="java_lang_Float" size="3"><entry>-72.34081</entry><entry>0.1894617</entry><entry>740.16974</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_222"> <translation><vector jtype="java_lang_Float" size="3"><entry>-71.073494</entry><entry>0.1894662</entry><entry>720.6298</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_223"> <translation><vector jtype="java_lang_Float" size="3"><entry>-69.78652</entry><entry>0.1894573</entry><entry>701.8417</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_224"> <translation><vector jtype="java_lang_Float" size="3"><entry>-68.27392</entry><entry>0.1894665</entry><entry>681.18256</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_225"> <translation><vector jtype="java_lang_Float" size="3"><entry>-66.350746</entry><entry>0.1894692</entry><entry>655.74115</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_226"> <translation><vector jtype="java_lang_Float" size="3"><entry>-64.81742</entry><entry>0.1894585</entry><entry>637.58765</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_227"> <translation><vector jtype="java_lang_Float" size="3"><entry>-61.78958</entry><entry>0.189466</entry><entry>604.9848</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_228"> <translation><vector jtype="java_lang_Float" size="3"><entry>-59.70544</entry><entry>0.1894722</entry><entry>581.45996</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_229"> <translation><vector jtype="java_lang_Float" size="3"><entry>-56.947067</entry><entry>0.189474</entry><entry>554.4007</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_230"> <translation><vector jtype="java_lang_Float" size="3"><entry>-54.896152</entry><entry>0.189468</entry><entry>533.49365</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_231"> <translation><vector jtype="java_lang_Float" size="3"><entry>-52.394962</entry><entry>0.189477</entry><entry>510.60867</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_232"> <translation><vector jtype="java_lang_Float" size="3"><entry>-51.20412</entry><entry>0.1894787</entry><entry>498.04037</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_233"> <translation><vector jtype="java_lang_Float" size="3"><entry>-49.897835</entry><entry>0.1894808</entry><entry>486.3615</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_234"> <translation><vector jtype="java_lang_Float" size="3"><entry>-48.67037</entry><entry>0.1894772</entry><entry>474.48773</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_235"> <translation><vector jtype="java_lang_Float" size="3"><entry>-47.32246</entry><entry>0.189481</entry><entry>463.1744</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_236"> <translation><vector jtype="java_lang_Float" size="3"><entry>-45.60427</entry><entry>0.1894823</entry><entry>448.58044</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_237"> <translation><vector jtype="java_lang_Float" size="3"><entry>-43.534264</entry><entry>0.1894787</entry><entry>430.23013</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_238"> <translation><vector jtype="java_lang_Float" size="3"><entry>-41.588825</entry><entry>0.1</entry><entry>413.37616</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_239"> <translation><vector jtype="java_lang_Float" size="3"><entry>-39.31832</entry><entry>0.1894823</entry><entry>392.67798</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_240"> <translation><vector jtype="java_lang_Float" size="3"><entry>-35.68855</entry><entry>0.189477</entry><entry>360.67703</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_241"> <translation><vector jtype="java_lang_Float" size="3"><entry>-32.33004</entry><entry>0.18948</entry><entry>331.5474</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_242"> <translation><vector jtype="java_lang_Float" size="3"><entry>-30.221794</entry><entry>0.1894772</entry><entry>313.8491</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_243"> <translation><vector jtype="java_lang_Float" size="3"><entry>-27.830086</entry><entry>0.1894722</entry><entry>293.8181</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_244"> <translation><vector jtype="java_lang_Float" size="3"><entry>-26.007252</entry><entry>0.1894784</entry><entry>278.5378</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_245"> <translation><vector jtype="java_lang_Float" size="3"><entry>-23.294886</entry><entry>0.1894784</entry><entry>255.88753</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_246"> <translation><vector jtype="java_lang_Float" size="3"><entry>-20.241808</entry><entry>0.1894758</entry><entry>230.43459</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_247"> <translation><vector jtype="java_lang_Float" size="3"><entry>-17.9721</entry><entry>0.1894746</entry><entry>211.44328</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_248"> <translation><vector jtype="java_lang_Float" size="3"><entry>-15.559827</entry><entry>0.1894766</entry><entry>191.77457</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_249"> <translation><vector jtype="java_lang_Float" size="3"><entry>-12.690089</entry><entry>0.189484</entry><entry>169.2798</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_250"> <translation><vector jtype="java_lang_Float" size="3"><entry>-10.821525</entry><entry>0.1894802</entry><entry>154.44685</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_251"> <translation><vector jtype="java_lang_Float" size="3"><entry>-9.244389</entry><entry>0.189485</entry><entry>138.33958</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_252"> <translation><vector jtype="java_lang_Float" size="3"><entry>-8.147142</entry><entry>0.1894778</entry><entry>124.65126</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_253"> <translation><vector jtype="java_lang_Float" size="3"><entry>-7.306558</entry><entry>0.1894775</entry><entry>114.28762</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_254"> <translation><vector jtype="java_lang_Float" size="3"><entry>-6.696174</entry><entry>0.1894772</entry><entry>104.929</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_255"> <translation><vector jtype="java_lang_Float" size="3"><entry>-6.450815</entry><entry>0.1894772</entry><entry>98.11713</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_256"> <translation><vector jtype="java_lang_Float" size="3"><entry>-6.4016185</entry><entry>0.1894758</entry><entry>91.13883</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_257"> <translation><vector jtype="java_lang_Float" size="3"><entry>-6.625776</entry><entry>0.189479</entry><entry>83.50304</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_258"> <translation><vector jtype="java_lang_Float" size="3"><entry>-6.7900205</entry><entry>0.1894752</entry><entry>76.92678</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_259"> <translation><vector jtype="java_lang_Float" size="3"><entry>-7.4400606</entry><entry>0.1</entry><entry>70.11099</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_260"> <translation><vector jtype="java_lang_Float" size="3"><entry>-8.54161</entry><entry>0.1894775</entry><entry>62.242146</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_261"> <translation><vector jtype="java_lang_Float" size="3"><entry>-9.707197</entry><entry>0.1894793</entry><entry>56.632668</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_262"> <translation><vector jtype="java_lang_Float" size="3"><entry>-10.4618435</entry><entry>0.1</entry><entry>53.079414</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_263"> <translation><vector jtype="java_lang_Float" size="3"><entry>-12.403709</entry><entry>0.189478</entry><entry>47.51433</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_264"> <translation><vector jtype="java_lang_Float" size="3"><entry>-13.642806</entry><entry>0.1894775</entry><entry>44.382168</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_265"> <translation><vector jtype="java_lang_Float" size="3"><entry>-15.10872</entry><entry>0.189477</entry><entry>41.544514</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_266"> <translation><vector jtype="java_lang_Float" size="3"><entry>-16.679932</entry><entry>0.1894752</entry><entry>38.982433</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_267"> <translation><vector jtype="java_lang_Float" size="3"><entry>-18.691841</entry><entry>0.1894775</entry><entry>35.95783</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_268"> <translation><vector jtype="java_lang_Float" size="3"><entry>-20.402248</entry><entry>0.1894772</entry><entry>33.660576</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_269"> <translation><vector jtype="java_lang_Float" size="3"><entry>-22.22444</entry><entry>0.1894766</entry><entry>31.802626</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_270"> <translation><vector jtype="java_lang_Float" size="3"><entry>-24.812214</entry><entry>0.1</entry><entry>29.402962</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_271"> <translation><vector jtype="java_lang_Float" size="3"><entry>-27.521912</entry><entry>0.1894766</entry><entry>27.489634</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_272"> <translation><vector jtype="java_lang_Float" size="3"><entry>-31.318445</entry><entry>0.1894775</entry><entry>25.09942</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_273"> <translation><vector jtype="java_lang_Float" size="3"><entry>-33.96702</entry><entry>0.1</entry><entry>23.57654</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_274"> <translation><vector jtype="java_lang_Float" size="3"><entry>-37.007244</entry><entry>0.189477</entry><entry>22.143822</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_275"> <translation><vector jtype="java_lang_Float" size="3"><entry>-41.073395</entry><entry>0.1</entry><entry>20.697498</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_276"> <translation><vector jtype="java_lang_Float" size="3"><entry>-45.55663</entry><entry>0.18948</entry><entry>19.506601</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_277"> <translation><vector jtype="java_lang_Float" size="3"><entry>-50.526676</entry><entry>0.1894775</entry><entry>18.159462</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_278"> <translation><vector jtype="java_lang_Float" size="3"><entry>-55.71722</entry><entry>0.1894805</entry><entry>17.080875</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_279"> <translation><vector jtype="java_lang_Float" size="3"><entry>-61.497528</entry><entry>0.1894775</entry><entry>16.249142</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_280"> <translation><vector jtype="java_lang_Float" size="3"><entry>-67.70349</entry><entry>0.189483</entry><entry>15.353108</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_281"> <translation><vector jtype="java_lang_Float" size="3"><entry>-72.905975</entry><entry>0.1894778</entry><entry>14.738784</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_282"> <translation><vector jtype="java_lang_Float" size="3"><entry>-79.76477</entry><entry>0.1894796</entry><entry>14.067854</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_283"> <translation><vector jtype="java_lang_Float" size="3"><entry>-86.59249</entry><entry>0.1894814</entry><entry>13.547096</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_284"> <translation><vector jtype="java_lang_Float" size="3"><entry>-94.680305</entry><entry>0.1894832</entry><entry>12.93501</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_285"> <translation><vector jtype="java_lang_Float" size="3"><entry>-104.46269</entry><entry>0.1894817</entry><entry>12.267548</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_286"> <translation><vector jtype="java_lang_Float" size="3"><entry>-111.87579</entry><entry>0.189482</entry><entry>12.083171</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_287"> <translation><vector jtype="java_lang_Float" size="3"><entry>-120.71391</entry><entry>0.189482</entry><entry>11.579764</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_288"> <translation><vector jtype="java_lang_Float" size="3"><entry>-128.8188</entry><entry>0.1894817</entry><entry>11.167559</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_289"> <translation><vector jtype="java_lang_Float" size="3"><entry>-142.3635</entry><entry>0.1894844</entry><entry>10.639633</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_290"> <translation><vector jtype="java_lang_Float" size="3"><entry>-151.89372</entry><entry>0.1894787</entry><entry>10.386936</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_291"> <translation><vector jtype="java_lang_Float" size="3"><entry>-166.21173</entry><entry>0.189483</entry><entry>10.542669</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_292"> <translation><vector jtype="java_lang_Float" size="3"><entry>-201.387</entry><entry>0.1894728</entry><entry>10.711486</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_293"> <translation><vector jtype="java_lang_Float" size="3"><entry>-252.05338</entry><entry>0.189481</entry><entry>10.521007</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_294"> <translation><vector jtype="java_lang_Float" size="3"><entry>-313.79596</entry><entry>0.1894686</entry><entry>10.166971</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_295"> <translation><vector jtype="java_lang_Float" size="3"><entry>-362.32632</entry><entry>0.1894912</entry><entry>10.537058</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_296"> <translation><vector jtype="java_lang_Float" size="3"><entry>-427.09964</entry><entry>0.1894814</entry><entry>10.594553</entry></vector></translation><speed>90</speed></wayPoint>
+<wayPoint id="WayPoint_297"> <translation><vector jtype="java_lang_Float" size="3"><entry>-489.68585</entry><entry>0.1894924</entry><entry>10.610817</entry></vector></translation><speed>90</speed></wayPoint>
+			</wayPoints>
+		</vehicle>	
+
+
+		<vehicle id="car2">
+			<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+			<!--<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>-->
+			<mass>800</mass>
+			<acceleration>6.0</acceleration>
+			<decelerationBrake>8.7</decelerationBrake>
+			<decelerationFreeWheel>2.0</decelerationFreeWheel>
+			<engineOn>true</engineOn>
+			<maxDistanceFromPath>5.0</maxDistanceFromPath>
+			<curveTension>0.001</curveTension>
+			<pathIsCycle>false</pathIsCycle>
+			<pathIsVisible>false</pathIsVisible>
+			<startWayPoint>WayPoint_1</startWayPoint>
+			<wayPoints>	
+<wayPoint id="WayPoint_1"> <translation><vector jtype="java_lang_Float" size="3"><entry>-545.42566</entry><entry>0.1894874</entry><entry>7.106556</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_2"> <translation><vector jtype="java_lang_Float" size="3"><entry>-554.9841</entry><entry>0.1894865</entry><entry>7.169223</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_3"> <translation><vector jtype="java_lang_Float" size="3"><entry>-573.24036</entry><entry>0.1894886</entry><entry>7.050691</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_4"> <translation><vector jtype="java_lang_Float" size="3"><entry>-590.2579</entry><entry>0.1894877</entry><entry>6.9530783</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_5"> <translation><vector jtype="java_lang_Float" size="3"><entry>-614.1411</entry><entry>0.1894817</entry><entry>6.821376</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_6"> <translation><vector jtype="java_lang_Float" size="3"><entry>-632.60345</entry><entry>0.1894835</entry><entry>6.715303</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_7"> <translation><vector jtype="java_lang_Float" size="3"><entry>-646.9679</entry><entry>0.189498</entry><entry>6.9754477</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_8"> <translation><vector jtype="java_lang_Float" size="3"><entry>-669.2697</entry><entry>0.1894972</entry><entry>7.059578</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_9"> <translation><vector jtype="java_lang_Float" size="3"><entry>-704.32465</entry><entry>0.1894698</entry><entry>7.125064</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_10"> <translation><vector jtype="java_lang_Float" size="3"><entry>-725.7767</entry><entry>0.1894883</entry><entry>6.867052</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_11"> <translation><vector jtype="java_lang_Float" size="3"><entry>-743.2087</entry><entry>0.189502</entry><entry>6.8770523</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_12"> <translation><vector jtype="java_lang_Float" size="3"><entry>-761.13385</entry><entry>0.189493</entry><entry>6.885234</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_13"> <translation><vector jtype="java_lang_Float" size="3"><entry>-775.26404</entry><entry>0.1894966</entry><entry>6.9789114</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_14"> <translation><vector jtype="java_lang_Float" size="3"><entry>-793.31604</entry><entry>0.1894966</entry><entry>7.0231605</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_15"> <translation><vector jtype="java_lang_Float" size="3"><entry>-807.3333</entry><entry>0.1895044</entry><entry>6.988872</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_16"> <translation><vector jtype="java_lang_Float" size="3"><entry>-823.611</entry><entry>0.1894972</entry><entry>6.9385915</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_17"> <translation><vector jtype="java_lang_Float" size="3"><entry>-840.8749</entry><entry>0.1894892</entry><entry>6.8835974</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_18"> <translation><vector jtype="java_lang_Float" size="3"><entry>-851.1665</entry><entry>0.18949</entry><entry>6.9405875</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_19"> <translation><vector jtype="java_lang_Float" size="3"><entry>-859.88794</entry><entry>0.1894877</entry><entry>7.2392693</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_20"> <translation><vector jtype="java_lang_Float" size="3"><entry>-863.6338</entry><entry>0.18948</entry><entry>7.5359173</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_21"> <translation><vector jtype="java_lang_Float" size="3"><entry>-867.649</entry><entry>0.189462</entry><entry>7.927953</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_22"> <translation><vector jtype="java_lang_Float" size="3"><entry>-874.7051</entry><entry>0.1894823</entry><entry>8.972064</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_23"> <translation><vector jtype="java_lang_Float" size="3"><entry>-879.16516</entry><entry>0.18944</entry><entry>9.3503475</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_24"> <translation><vector jtype="java_lang_Float" size="3"><entry>-884.1593</entry><entry>0.1894716</entry><entry>10.240961</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_25"> <translation><vector jtype="java_lang_Float" size="3"><entry>-888.0932</entry><entry>0.189419</entry><entry>11.44231</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_26"> <translation><vector jtype="java_lang_Float" size="3"><entry>-892.10956</entry><entry>0.189486</entry><entry>12.603575</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_27"> <translation><vector jtype="java_lang_Float" size="3"><entry>-896.07025</entry><entry>0.1894823</entry><entry>13.796154</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_28"> <translation><vector jtype="java_lang_Float" size="3"><entry>-900.99896</entry><entry>0.1895145</entry><entry>15.320808</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_29"> <translation><vector jtype="java_lang_Float" size="3"><entry>-905.4333</entry><entry>0.1894996</entry><entry>17.044067</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_30"> <translation><vector jtype="java_lang_Float" size="3"><entry>-910.4774</entry><entry>0.1894883</entry><entry>19.194536</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_31"> <translation><vector jtype="java_lang_Float" size="3"><entry>-915.1573</entry><entry>0.189481</entry><entry>21.168312</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_32"> <translation><vector jtype="java_lang_Float" size="3"><entry>-919.1185</entry><entry>0.1</entry><entry>23.104641</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_33"> <translation><vector jtype="java_lang_Float" size="3"><entry>-923.5384</entry><entry>0.1900056</entry><entry>25.612133</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_34"> <translation><vector jtype="java_lang_Float" size="3"><entry>-927.2251</entry><entry>0.1894683</entry><entry>27.848207</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_35"> <translation><vector jtype="java_lang_Float" size="3"><entry>-931.47144</entry><entry>0.1894692</entry><entry>30.33365</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_36"> <translation><vector jtype="java_lang_Float" size="3"><entry>-936.3428</entry><entry>0.1880446</entry><entry>33.706684</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_37"> <translation><vector jtype="java_lang_Float" size="3"><entry>-939.7643</entry><entry>0.189474</entry><entry>36.08237</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_38"> <translation><vector jtype="java_lang_Float" size="3"><entry>-943.16394</entry><entry>0.1894895</entry><entry>39.05491</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_39"> <translation><vector jtype="java_lang_Float" size="3"><entry>-946.7616</entry><entry>0.1896373</entry><entry>42.00256</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_40"> <translation><vector jtype="java_lang_Float" size="3"><entry>-949.6665</entry><entry>0.1894665</entry><entry>44.69938</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_41"> <translation><vector jtype="java_lang_Float" size="3"><entry>-952.80725</entry><entry>0.1894936</entry><entry>47.772846</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_42"> <translation><vector jtype="java_lang_Float" size="3"><entry>-955.7947</entry><entry>0.189479</entry><entry>50.71705</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_43"> <translation><vector jtype="java_lang_Float" size="3"><entry>-958.86523</entry><entry>0.189467</entry><entry>54.11388</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_44"> <translation><vector jtype="java_lang_Float" size="3"><entry>-961.273</entry><entry>0.189393</entry><entry>57.064396</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_45"> <translation><vector jtype="java_lang_Float" size="3"><entry>-963.2467</entry><entry>0.1895026</entry><entry>59.36557</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_46"> <translation><vector jtype="java_lang_Float" size="3"><entry>-965.37695</entry><entry>0.1894728</entry><entry>62.095383</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_47"> <translation><vector jtype="java_lang_Float" size="3"><entry>-967.6902</entry><entry>0.1894918</entry><entry>65.62757</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_48"> <translation><vector jtype="java_lang_Float" size="3"><entry>-969.7108</entry><entry>0.1894397</entry><entry>68.391716</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_49"> <translation><vector jtype="java_lang_Float" size="3"><entry>-971.706</entry><entry>0.189484</entry><entry>71.3779</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_50"> <translation><vector jtype="java_lang_Float" size="3"><entry>-973.2365</entry><entry>0.1894692</entry><entry>74.10621</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_51"> <translation><vector jtype="java_lang_Float" size="3"><entry>-974.94495</entry><entry>0.1887513</entry><entry>77.25155</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_52"> <translation><vector jtype="java_lang_Float" size="3"><entry>-977.4198</entry><entry>0.1894766</entry><entry>81.76376</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_53"> <translation><vector jtype="java_lang_Float" size="3"><entry>-979.62616</entry><entry>0.18948</entry><entry>85.88992</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_54"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.6772</entry><entry>0.18949</entry><entry>90.226105</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_55"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.56805</entry><entry>0.1894364</entry><entry>94.89623</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_56"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.7309</entry><entry>0.189483</entry><entry>98.70887</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_57"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.4714</entry><entry>0.1894933</entry><entry>103.78156</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_58"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.1651</entry><entry>0.1894772</entry><entry>109.55337</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_59"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.3838</entry><entry>0.1894734</entry><entry>114.0882</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_60"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.26715</entry><entry>0.18944</entry><entry>118.51962</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_61"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.3039</entry><entry>0.1894102</entry><entry>123.69302</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_62"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.96716</entry><entry>0.189433</entry><entry>129.09114</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_63"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.4742</entry><entry>0.1894758</entry><entry>135.03978</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_64"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.8153</entry><entry>0.1893467</entry><entry>139.80573</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_65"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.9105</entry><entry>0.1894817</entry><entry>145.29066</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_66"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.75525</entry><entry>0.1894787</entry><entry>151.73148</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_67"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.7012</entry><entry>0.1894787</entry><entry>156.72952</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_68"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.69965</entry><entry>0.189482</entry><entry>162.65111</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_69"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.44696</entry><entry>0.1894847</entry><entry>169.1526</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_70"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.9826</entry><entry>0.1894784</entry><entry>178.94643</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_71"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.2707</entry><entry>0.189478</entry><entry>195.48767</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_72"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.38135</entry><entry>0.189477</entry><entry>216.27568</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_73"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.45526</entry><entry>0.1894784</entry><entry>237.8544</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_74"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.6621</entry><entry>0.1894832</entry><entry>258.62753</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_75"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.8177</entry><entry>0.1894758</entry><entry>282.9964</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_76"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.947</entry><entry>0.1894853</entry><entry>308.09842</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_77"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.37177</entry><entry>0.189481</entry><entry>330.61417</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_78"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.9848</entry><entry>0.1894823</entry><entry>346.00336</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_79"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.5302</entry><entry>0.189487</entry><entry>364.03766</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_80"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.254</entry><entry>0.1894853</entry><entry>384.3547</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_81"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.6877</entry><entry>0.1894886</entry><entry>410.37766</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_82"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.48706</entry><entry>0.189487</entry><entry>432.1878</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_83"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.2195</entry><entry>0.189481</entry><entry>462.89786</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_84"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.58923</entry><entry>0.1894802</entry><entry>506.65744</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_85"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.6066</entry><entry>0.1894814</entry><entry>534.8378</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_86"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.56085</entry><entry>0.1895127</entry><entry>563.7738</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_87"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.4702</entry><entry>0.1894865</entry><entry>593.12085</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_88"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.645</entry><entry>0.1894814</entry><entry>630.3598</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_89"> <translation><vector jtype="java_lang_Float" size="3"><entry>-983.8564</entry><entry>0.1894778</entry><entry>671.08234</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_90"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.49243</entry><entry>0.1894993</entry><entry>731.4377</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_91"> <translation><vector jtype="java_lang_Float" size="3"><entry>-985.0335</entry><entry>0.1894865</entry><entry>777.89606</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_92"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.09656</entry><entry>0.1894948</entry><entry>839.27826</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_93"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.2252</entry><entry>0.189494</entry><entry>891.22034</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_94"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.2257</entry><entry>0.1894895</entry><entry>937.8515</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_95"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.3725</entry><entry>0.1894695</entry><entry>997.71936</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_96"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.2443</entry><entry>0.1894704</entry><entry>1042.6001</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_97"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.622</entry><entry>0.1895067</entry><entry>1112.1497</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_98"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.87976</entry><entry>-0.36320913</entry><entry>1190.855</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_99"> <translation><vector jtype="java_lang_Float" size="3"><entry>-993.0156</entry><entry>0.189504</entry><entry>1236.5565</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_100"> <translation><vector jtype="java_lang_Float" size="3"><entry>-993.1346</entry><entry>0.1894835</entry><entry>1289.7307</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_101"> <translation><vector jtype="java_lang_Float" size="3"><entry>-993.4678</entry><entry>0.1894695</entry><entry>1326.0493</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_102"> <translation><vector jtype="java_lang_Float" size="3"><entry>-993.2206</entry><entry>0.1894963</entry><entry>1352.0739</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_103"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.7471</entry><entry>0.1894576</entry><entry>1357.0803</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_104"> <translation><vector jtype="java_lang_Float" size="3"><entry>-992.3384</entry><entry>0.1894695</entry><entry>1362.9049</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_105"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.7479</entry><entry>0.189458</entry><entry>1368.1681</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_106"> <translation><vector jtype="java_lang_Float" size="3"><entry>-991.1305</entry><entry>0.189433</entry><entry>1373.9094</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_107"> <translation><vector jtype="java_lang_Float" size="3"><entry>-990.4902</entry><entry>0.1894608</entry><entry>1377.8113</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_108"> <translation><vector jtype="java_lang_Float" size="3"><entry>-989.5852</entry><entry>0.1894537</entry><entry>1382.9347</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_109"> <translation><vector jtype="java_lang_Float" size="3"><entry>-988.66766</entry><entry>0.1894963</entry><entry>1388.0165</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_110"> <translation><vector jtype="java_lang_Float" size="3"><entry>-987.7064</entry><entry>0.1895354</entry><entry>1392.6146</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_111"> <translation><vector jtype="java_lang_Float" size="3"><entry>-986.10583</entry><entry>0.1895014</entry><entry>1398.8907</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_112"> <translation><vector jtype="java_lang_Float" size="3"><entry>-984.5734</entry><entry>0.1895023</entry><entry>1403.8528</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_113"> <translation><vector jtype="java_lang_Float" size="3"><entry>-982.8144</entry><entry>0.1894883</entry><entry>1409.7495</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_114"> <translation><vector jtype="java_lang_Float" size="3"><entry>-981.3573</entry><entry>0.1894734</entry><entry>1413.583</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_115"> <translation><vector jtype="java_lang_Float" size="3"><entry>-979.4185</entry><entry>0.1894603</entry><entry>1418.3604</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_116"> <translation><vector jtype="java_lang_Float" size="3"><entry>-977.0254</entry><entry>0.1895145</entry><entry>1423.5248</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_117"> <translation><vector jtype="java_lang_Float" size="3"><entry>-974.23</entry><entry>0.1894993</entry><entry>1428.7115</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_118"> <translation><vector jtype="java_lang_Float" size="3"><entry>-972.2023</entry><entry>0.1894945</entry><entry>1432.6205</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_119"> <translation><vector jtype="java_lang_Float" size="3"><entry>-969.9354</entry><entry>0.1894907</entry><entry>1436.3824</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_120"> <translation><vector jtype="java_lang_Float" size="3"><entry>-967.47314</entry><entry>0.1894638</entry><entry>1439.8368</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_121"> <translation><vector jtype="java_lang_Float" size="3"><entry>-964.7493</entry><entry>0.189519</entry><entry>1443.7896</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_122"> <translation><vector jtype="java_lang_Float" size="3"><entry>-961.1487</entry><entry>0.1894746</entry><entry>1448.3131</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_123"> <translation><vector jtype="java_lang_Float" size="3"><entry>-956.97577</entry><entry>0.1894772</entry><entry>1453.0807</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_124"> <translation><vector jtype="java_lang_Float" size="3"><entry>-953.27075</entry><entry>0.1894942</entry><entry>1456.3752</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_125"> <translation><vector jtype="java_lang_Float" size="3"><entry>-950.1995</entry><entry>0.1895044</entry><entry>1459.448</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_126"> <translation><vector jtype="java_lang_Float" size="3"><entry>-946.61804</entry><entry>0.1894895</entry><entry>1462.5507</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_127"> <translation><vector jtype="java_lang_Float" size="3"><entry>-943.1504</entry><entry>0.1894257</entry><entry>1465.3691</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_128"> <translation><vector jtype="java_lang_Float" size="3"><entry>-938.3219</entry><entry>0.1893497</entry><entry>1468.5431</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_129"> <translation><vector jtype="java_lang_Float" size="3"><entry>-932.7907</entry><entry>0.189404</entry><entry>1472.2402</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_130"> <translation><vector jtype="java_lang_Float" size="3"><entry>-927.7369</entry><entry>0.1894862</entry><entry>1474.8315</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_131"> <translation><vector jtype="java_lang_Float" size="3"><entry>-922.47546</entry><entry>0.1894802</entry><entry>1477.6901</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_132"> <translation><vector jtype="java_lang_Float" size="3"><entry>-917.9658</entry><entry>0.1895026</entry><entry>1479.687</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_133"> <translation><vector jtype="java_lang_Float" size="3"><entry>-913.39777</entry><entry>0.18951</entry><entry>1481.4019</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_134"> <translation><vector jtype="java_lang_Float" size="3"><entry>-907.99414</entry><entry>0.1894942</entry><entry>1483.258</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_135"> <translation><vector jtype="java_lang_Float" size="3"><entry>-903.01483</entry><entry>0.189478</entry><entry>1484.805</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_136"> <translation><vector jtype="java_lang_Float" size="3"><entry>-898.4193</entry><entry>0.1894716</entry><entry>1486.1239</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_137"> <translation><vector jtype="java_lang_Float" size="3"><entry>-892.15466</entry><entry>0.1894734</entry><entry>1487.6942</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_138"> <translation><vector jtype="java_lang_Float" size="3"><entry>-888.13104</entry><entry>0.189469</entry><entry>1488.3959</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_139"> <translation><vector jtype="java_lang_Float" size="3"><entry>-883.3932</entry><entry>0.1894752</entry><entry>1489.4215</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_140"> <translation><vector jtype="java_lang_Float" size="3"><entry>-877.4269</entry><entry>0.1895044</entry><entry>1490.4675</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_141"> <translation><vector jtype="java_lang_Float" size="3"><entry>-871.383</entry><entry>0.1894907</entry><entry>1491.2568</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_142"> <translation><vector jtype="java_lang_Float" size="3"><entry>-865.61273</entry><entry>0.1894883</entry><entry>1492.0118</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_143"> <translation><vector jtype="java_lang_Float" size="3"><entry>-859.1981</entry><entry>0.189471</entry><entry>1492.4916</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_144"> <translation><vector jtype="java_lang_Float" size="3"><entry>-853.62836</entry><entry>0.1894722</entry><entry>1492.8359</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_145"> <translation><vector jtype="java_lang_Float" size="3"><entry>-848.526</entry><entry>0.1894734</entry><entry>1493.0217</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_146"> <translation><vector jtype="java_lang_Float" size="3"><entry>-842.5768</entry><entry>0.189483</entry><entry>1493.0607</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_147"> <translation><vector jtype="java_lang_Float" size="3"><entry>-837.6182</entry><entry>0.1894966</entry><entry>1492.9303</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_148"> <translation><vector jtype="java_lang_Float" size="3"><entry>-819.501</entry><entry>0.18949</entry><entry>1493.1046</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_149"> <translation><vector jtype="java_lang_Float" size="3"><entry>-801.1864</entry><entry>0.189487</entry><entry>1493.36</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_150"> <translation><vector jtype="java_lang_Float" size="3"><entry>-762.55884</entry><entry>0.1894814</entry><entry>1493.3872</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_151"> <translation><vector jtype="java_lang_Float" size="3"><entry>-711.98486</entry><entry>0.1894832</entry><entry>1493.612</entry></vector></translation><speed>138</speed></wayPoint>
+<wayPoint id="WayPoint_152"> <translation><vector jtype="java_lang_Float" size="3"><entry>-685.41504</entry><entry>0.189484</entry><entry>1493.6097</entry></vector></translation><speed>138</speed></wayPoint>
+			</wayPoints>
+		</vehicle>	
+
+
+	</traffic>
+	<road>
+
+	</road>
+
+</scenario>

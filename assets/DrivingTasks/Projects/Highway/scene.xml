@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene xmlns="http://opends.eu/drivingtask/scene"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://opends.eu/drivingtask/scene ../../Schema/scene.xsd">
+
+	<models>
+		<model id="driverCar" key="Models/Cars/drivingCars/bmw1/Car.j3o">
+			<mass>800</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>-90</entry> <!-- start point rotation-->
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-32.797253</entry><entry>0.12054783</entry><entry>820.6648</entry>
+				</vector>
+			</translation>
+
+		</model>
+
+	
+		<model id="City" key="Scenes/BMW/BMW.scene">
+			<mass>0</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</translation>
+		</model>
+
+
+		<!-- Initiate guidance message -->
+		<model id="box0" key="" ref="squareBox">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>1</entry>
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-504.60147</entry>
+					<entry>0.0894865</entry>
+					<entry>13.506672</entry> 
+				</vector>
+			</translation>
+		</model>
+
+
+
+		<!-- Initiate warning message -->
+		<model id="box1A" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-987.12146</entry>
+					<entry>-0.3589484</entry>
+					<entry>217.89777</entry>
+				</vector>
+			</translation>
+		</model>
+
+
+		<!-- Approximate overtake should take place -->
+		<model id="box1B" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-979.20105</entry>
+					<entry>-0.35894892</entry>
+					<entry>589.9215</entry>
+				</vector>
+			</translation>
+		</model>
+
+		<!-- Roadworks warning -->
+		<model id="box2" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-986.3582</entry>
+					<entry>-0.35894758</entry>
+					<entry>1057.744</entry>
+				</vector>
+			</translation>
+		</model>
+
+		
+		<!-- Roadworks ahead - road sign -->
+		<model id="roadwork_1" key="Models/RoadSigns/otherSigns/RoadWork/RoadWork.scene" ref="box">
+			<mass>0</mass>
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>180</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-992.5</entry>
+					<entry>-0.35894758</entry>
+					<entry>1057.744</entry>
+				</vector>
+			</translation>
+		</model>		
+		
+		
+		<model id="roadwork_2" key="Models/RoadSigns/otherSigns/RoadWork/RoadWork.scene" ref="box">
+			<mass>0</mass>
+			<visible>true</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>180</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-980.8582</entry>
+					<entry>-0.35894758</entry>
+					<entry>1057.744</entry>
+				</vector>
+			</translation>
+		</model>	
+
+		<!-- Traffic condition warning -->
+		<model id="box3" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+		
+			<!--<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-985.3582</entry>
+					<entry>-0.35894758</entry>
+					<entry>1057.744</entry>
+				</vector>
+			</translation>-->
+			
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-988.88727</entry>
+					<entry>-0.35894752</entry>
+					<entry>1242.5425</entry>
+				</vector>
+			</translation>
+		</model>
+
+		<!-- Traffic congested ahead, visual start only -->
+		<model id="box4" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>90</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+		
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-716.35077</entry>
+					<entry>-0.3589481</entry>
+					<entry>1489.7</entry>
+				</vector>
+			</translation>
+		</model>
+
+
+			<!-- Road works area, visual start only -->
+		<model id="box5" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>90</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-442.0632</entry>
+					<entry>-0.35894853</entry>
+					<entry>1489.6417</entry>
+				</vector>
+			</translation>
+		</model>
+
+			<!-- End of road works area, end of congestion on road visual start only -->
+		<model id="box6" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>90</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<!--<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-442.0632</entry>
+					<entry>-0.35894853</entry>
+					<entry>1489.6417</entry>
+				</vector>
+			</translation>-->
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-150.07843</entry>
+					<entry>-0.35894805</entry>
+					<entry>1489.3704</entry>
+				</vector>
+			</translation>
+		</model>
+		
+		
+		<!-- Emergency break scenario 1 -->
+		<model id="box7" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-70.52049</entry>
+					<entry>-0.35894865</entry>
+					<entry>976.485</entry>
+				</vector>
+			</translation>
+		</model>
+
+		<!-- Emergency break scenario 2 -->
+		<model id="box8" key="" ref="box">
+			<mass>0</mass>
+			<material>
+				<color>
+					<vector jtype="java_lang_Float" size="4">
+						<entry>0</entry>
+						<entry>0</entry>
+						<entry>1</entry>
+						<entry>1</entry>
+					</vector>
+				</color>
+			</material>
+
+			<visible>false</visible>
+			<collisionShape>none</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>2</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="true">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+		<translation>
+			<vector jtype="java_lang_Float" size="3">
+				<entry>-18.128634</entry>
+				<entry>-0.358948</entry>
+				<entry>207.90341</entry>
+			</vector>
+		</translation>
+		</model>
+		
+<model id="TrafficCone_1" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-80.88494</entry><entry>-0.048981</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-464.41382</entry><entry>0.00517</entry><entry>1484.3663</entry></vector></translation></model>
+<model id="TrafficCone_2" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.32128</entry><entry>-0.049044177</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-461.44583</entry><entry>0.005101</entry><entry>1485.113</entry></vector></translation></model>
+<model id="TrafficCone_3" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94214</entry><entry>-94.79333</entry><entry>-0.04883927</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-458.5073</entry><entry>0.005271</entry><entry>1485.8787</entry></vector></translation></model>
+<model id="TrafficCone_4" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-97.334885</entry><entry>-0.048902452</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-455.26556</entry><entry>0.005004</entry><entry>1486.5432</entry></vector></translation></model>
+<model id="TrafficCone_5" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-98.50424</entry><entry>-0.048951972</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-451.82196</entry><entry>0.005071</entry><entry>1487.1625</entry></vector></translation></model>
+<model id="TrafficCone_6" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-97.65513</entry><entry>-0.049027096</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-447.5868</entry><entry>0.005119</entry><entry>1487.6938</entry></vector></translation></model>
+<model id="TrafficCone_7" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94218</entry><entry>-93.48361</entry><entry>-0.048776094</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-438.06604</entry><entry>0.005007</entry><entry>1488.057</entry></vector></translation></model>
+<model id="TrafficCone_8" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94214</entry><entry>-91.14774</entry><entry>-0.04871633</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-441.8062</entry><entry>0.005287</entry><entry>1488.0302</entry></vector></translation></model>
+<model id="TrafficCone_9" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-90.45622</entry><entry>-0.048776094</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-430.59015</entry><entry>0.005168</entry><entry>1488.1244</entry></vector></translation></model>
+<model id="TrafficCone_10" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-90.51571</entry><entry>-0.048764132</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-425.0132</entry><entry>0.005183</entry><entry>1488.1921</entry></vector></translation></model>
+<model id="TrafficCone_11" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-90.51571</entry><entry>-0.04878463</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-418.82477</entry><entry>0.005132</entry><entry>1488.2479</entry></vector></translation></model>
+<model id="TrafficCone_12" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.823265</entry><entry>-0.048774384</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-412.19556</entry><entry>0.005031</entry><entry>1488.1904</entry></vector></translation></model>
+<model id="TrafficCone_13" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94218</entry><entry>-89.823265</entry><entry>-0.048740234</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-405.95892</entry><entry>0.00503</entry><entry>1488.1676</entry></vector></translation></model>
+<model id="TrafficCone_14" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94215</entry><entry>-90.425064</entry><entry>-0.04873682</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-399.2388</entry><entry>0.00523</entry><entry>1488.2632</entry></vector></translation></model>
+<model id="TrafficCone_15" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-90.425064</entry><entry>-0.048731696</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-393.05237</entry><entry>0.005229</entry><entry>1488.312</entry></vector></translation></model>
+<model id="TrafficCone_16" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.83984</entry><entry>-0.048706084</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-387.06656</entry><entry>0.005076</entry><entry>1488.2399</entry></vector></translation></model>
+<model id="TrafficCone_17" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.0487556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-380.18945</entry><entry>0.005065</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_18" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.0487556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-374.60095</entry><entry>0.005032</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_19" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.0487556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-368.19464</entry><entry>0.005025</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_20" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.04872145</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-360.9937</entry><entry>0.005083</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_21" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048767556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-353.93936</entry><entry>0.005053</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_22" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048767556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-348.1354</entry><entry>0.005046</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_23" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.04872145</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-341.8305</entry><entry>0.005074</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_24" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94218</entry><entry>-89.89059</entry><entry>-0.048801705</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-335.44058</entry><entry>0.005037</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_25" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.04876926</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-329.1736</entry><entry>0.005041</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_26" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048774384</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-322.26953</entry><entry>0.005088</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_27" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048712913</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-315.6874</entry><entry>0.005047</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_28" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048767556</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-308.93304</entry><entry>0.005073</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_29" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048794877</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-302.2368</entry><entry>0.005064</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_30" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048748773</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-295.94363</entry><entry>0.005068</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_31" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.04874194</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-289.64026</entry><entry>0.005046</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_32" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048774384</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-283.49365</entry><entry>0.005076</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_33" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.048740234</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-277.16492</entry><entry>0.005076</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_34" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048748773</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-271.0559</entry><entry>0.005077</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_35" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.04872828</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-264.2868</entry><entry>0.005025</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_36" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048815366</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-258.04965</entry><entry>0.00509</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_37" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94217</entry><entry>-89.89059</entry><entry>-0.04874194</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-251.35231</entry><entry>0.005041</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_38" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048823904</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-245.12361</entry><entry>0.00517</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_39" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048796583</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-238.25714</entry><entry>0.005132</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_40" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048760723</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-231.9465</entry><entry>0.00513</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_41" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048753895</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-225.99413</entry><entry>0.00515</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_42" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048782922</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-219.07207</entry><entry>0.005162</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_43" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048801705</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-212.65889</entry><entry>0.005143</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_44" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048810244</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-206.35112</entry><entry>0.005149</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_45" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.04874194</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-200.18681</entry><entry>0.005147</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_46" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048782922</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-192.8829</entry><entry>0.005156</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_47" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.04874194</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-186.56969</entry><entry>0.005143</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_48" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048753895</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-180.27135</entry><entry>0.005134</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_49" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048808537</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-174.15936</entry><entry>0.005155</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_50" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.04872828</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-169.561</entry><entry>0.00513</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_51" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048774384</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-167.80086</entry><entry>0.005153</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_52" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94216</entry><entry>-89.89059</entry><entry>-0.048760723</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-166.08797</entry><entry>0.005146</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_53" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942154</entry><entry>-89.89059</entry><entry>-0.048796583</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-163.73405</entry><entry>0.005132</entry><entry>1488.2491</entry></vector></translation></model>
+<model id="TrafficCone_54" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94131</entry><entry>-88.89835</entry><entry>-0.048099905</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-160.34593</entry><entry>0.00511</entry><entry>1488.2493</entry></vector></translation></model>
+<model id="TrafficCone_55" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.941315</entry><entry>-86.17174</entry><entry>-0.048026487</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-156.72441</entry><entry>0.005141</entry><entry>1488.0032</entry></vector></translation></model>
+<model id="TrafficCone_56" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94121</entry><entry>-83.189606</entry><entry>-0.047997452</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-152.93112</entry><entry>0.005564</entry><entry>1487.3784</entry></vector></translation></model>
+<model id="TrafficCone_57" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94131</entry><entry>-80.5475</entry><entry>-0.04793086</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-150.02509</entry><entry>0.005189</entry><entry>1486.7108</entry></vector></translation></model>
+<model id="TrafficCone_58" key="Models/roadObjects/TrafficCone/TrafficCone.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>none</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94131</entry><entry>-78.44648</entry><entry>-0.04795476</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-146.81662</entry><entry>0.005146</entry><entry>1485.9482</entry></vector></translation></model>
+
+
+
+	</models>
+
+	<geometries>
+		<box id="box">
+			<width>3</width>
+			<depth>1</depth>
+			<height>0.1</height>
+		</box>
+		
+		<box id="squareBox">
+			<width>1</width>
+			<depth>1</depth>
+			<height>1</height>
+		</box>
+		
+	</geometries>
+
+
+
+	<gravity>9.81</gravity>
+
+	<time>19:00:12</time>
+
+	<date>2010-11-25</date>
+
+	<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+	</lights>
+	<skyTexture>Textures/Sky/Clouds/clouds.properties</skyTexture>
+</scene>

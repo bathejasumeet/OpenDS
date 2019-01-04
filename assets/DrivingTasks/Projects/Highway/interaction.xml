@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interaction xmlns="http://opends.eu/drivingtask/interaction"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://opends.eu/drivingtask/interaction ../../Schema/interaction.xsd">
+
+
+	<activities>		
+		<activity id="activitySpeedSign">
+			<action id="getSpeedForAnim" delay="0" repeat="20">
+				<parameter name="animBlink" value="my_animation" />
+				<parameter name="modelID" value="animSign03" />
+			</action>
+		</activity>
+	
+		
+	<!--pause piucture end-->
+<!--Action triggers end-->
+	</activities>
+	
+
+	
+	<triggers>
+	<trigger id="Trigger11" priority="1">
+		<activities>
+				<activity ref="activitySpeedSign"/>
+		</activities>		
+		<condition>collideWith:blueBox1SS</condition>
+	</trigger>
+
+<!--Action triggers end-->
+	</triggers>
+	
+</interaction>

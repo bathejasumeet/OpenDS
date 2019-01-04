@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Settings file for Carmina Driving Task Data Query Module</comment>
+<entry key="interaction">interaction.xml</entry>
+<entry key="verbose">false</entry>
+<entry key="scenario">scenario.xml</entry>
+<entry key="settings">settings.xml</entry>
+<entry key="scene">scene.xml</entry>
+<entry key="openDrive">openDrive.xodr</entry>
+<!-- 
+<entry key="openDrive">Crossing8Course.xodr</entry>
+<entry key="openDrive">CulDeSac.xodr</entry>
+<entry key="openDrive">CrossingComplex8Course.xodr</entry>
+<entry key="openDrive">Roundabout8Course.xodr</entry>
+<entry key="openDrive">sample1.1.xodr</entry>
+<entry key="openDrive">KA-Suedtangente-Vires.xodr</entry>
+<entry key="openDrive">openDrive.xodr</entry>
+-->
+</properties>

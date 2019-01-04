@@ -1,0 +1,1 @@
+TrafficCone_;Models/roadObjects/TrafficCone/TrafficCone.scene;0,0,-5;270,0,0;0.7,0.7,0.7;

@@ -1,7 +1,9 @@
 #Ignore Everything
-*
-
+/*
+/*/
 #But not these files
 !.gitignore
-!*/analyzerData/
-!assets/DrivingTasks/Projects/
+!/analyzerData
+!/assets
+/assets/*
+!/assets/DrivingTasks
