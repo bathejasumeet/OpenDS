@@ -86,7 +86,7 @@
 				<wayPoint id="WayPoint_6"><translation><vector jtype="java_lang_Float" size="3"><entry>-34.09889</entry><entry>0.11556184</entry><entry>776.75854</entry></vector></translation><speed>70</speed></wayPoint>
 				<wayPoint id="WayPoint_7"><translation><vector jtype="java_lang_Float" size="3"><entry>-33.760365</entry><entry>0.115561865</entry><entry>767.5245</entry></vector></translation><speed>70</speed></wayPoint>
 			</wayPoints>
-			
+
 		</autoPilot>
 
 		</car>
