@@ -33,6 +33,7 @@ import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
+import com.jme3.scene.shape.Sphere;
 import com.jme3.texture.Texture;
 
 import eu.opends.car.Car;
@@ -97,7 +98,7 @@ public class TrafficCar extends Car implements TrafficObject
 		init(name);
 
 		
-		/*
+		// /*
 		//---------------------------------
 		// add bounding sphere to a traffic car which can be hit by the user-controlled car
 		Sphere sphere = new Sphere(20, 20, 2.5f);
@@ -109,7 +110,7 @@ public class TrafficCar extends Car implements TrafficObject
 		carNode.attachChild(boundingSphere);
 		sim.getTriggerNode().attachChild(carNode);
 		//---------------------------------
-		*/
+		// */
 		
 		followBox = new FollowBox(sim, this, trafficCarData.getFollowBoxSettings(), true, true);
 		
