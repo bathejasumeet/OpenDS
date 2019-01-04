@@ -242,7 +242,7 @@
 
 
 
-		
+
 		<model id="driverCar" key="Models/Cars/drivingCars/AudiS6_shadowForBMW/Car.j3o">
 			<mass>800</mass>
 			<visible>true</visible>
@@ -273,7 +273,7 @@
 			</translation>
 			<shadowMode>CastAndReceive</shadowMode>
 		</model>
-		
+
 		<model id="shadowChassis" key="Models/Cars/highPolygonDrivingCars/ToyotaBMW/Chassis/Chassis.j3o" ref="">
 			<mass>200</mass>
 			<visible>true</visible>
@@ -456,7 +456,7 @@
 			<shadowMode>CastAndReceive</shadowMode>
 		</model>
 
-		
+
 		<model id="shadowSteeringWheel_right" key="Models/Cars/highPolygonDrivingCars/ToyotaBMW/SteeringWheel_right/SteeringWheel.j3o" ref="">
 			<mass>200</mass>
 			<visible>true</visible>
@@ -487,7 +487,7 @@
 			<shadowMode>CastAndReceive</shadowMode>
 		</model>
 
-		
+
 
 
 		<model id="shadowInstrumentCluster_right" key="Models/Cars/highPolygonDrivingCars/ToyotaBMW/DashboardRight/console.j3o" ref="">
@@ -609,7 +609,7 @@
 			<shadowMode>CastAndReceive</shadowMode>
 		</model>
 
-	
+
 		<model id="shadowWheelBackLeft" key="Models/Cars/highPolygonDrivingCars/ToyotaBMW/wheelsBL/wheelsBL.j3o" ref="">
 			<mass>200</mass>
 			<visible>true</visible>
@@ -669,9 +669,9 @@
 			</translation>
 			<shadowMode>CastAndReceive</shadowMode>
 		</model>
-		
-		
-		
+
+
+
 		<model id="shadowGlassRainLayer_left" key="Models/Cars/highPolygonDrivingCars/ToyotaBMW/WindshieldLeft/Windshield.j3o" ref="">
 			<mass>200</mass>
 			<visible>true</visible>
@@ -755,14 +755,14 @@
 	<date>2010-11-25</date>
 
 	<lights>
-		<!-- <pointLight> <position> <vector jtype="java_lang_Float" size="3"> 
-			<entry>0</entry> <entry>100</entry> <entry>250</entry> </vector> </position> 
-			<radius>0</radius> <color> <vector jtype="java_lang_Float" size="4"> <entry>1</entry> 
-			<entry>1</entry> <entry>0.9</entry> <entry>0.1</entry> </vector> </color> 
-			</pointLight> <pointLight> <position> <vector jtype="java_lang_Float" size="3"> 
-			<entry>0</entry> <entry>100</entry> <entry>250</entry> </vector> </position> 
-			<radius>0</radius> <color> <vector jtype="java_lang_Float" size="4"> <entry>1</entry> 
-			<entry>1</entry> <entry>0.9</entry> <entry>0.1</entry> </vector> </color> 
+		<!-- <pointLight> <position> <vector jtype="java_lang_Float" size="3">
+			<entry>0</entry> <entry>100</entry> <entry>250</entry> </vector> </position>
+			<radius>0</radius> <color> <vector jtype="java_lang_Float" size="4"> <entry>1</entry>
+			<entry>1</entry> <entry>0.9</entry> <entry>0.1</entry> </vector> </color>
+			</pointLight> <pointLight> <position> <vector jtype="java_lang_Float" size="3">
+			<entry>0</entry> <entry>100</entry> <entry>250</entry> </vector> </position>
+			<radius>0</radius> <color> <vector jtype="java_lang_Float" size="4"> <entry>1</entry>
+			<entry>1</entry> <entry>0.9</entry> <entry>0.1</entry> </vector> </color>
 			</pointLight> -->
 		<directionalLight>
 			<direction>

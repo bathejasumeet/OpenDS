@@ -144,7 +144,7 @@ public class Util
 	}
 	
 	
-	/*
+	// /*
 	//---------------------------------------------
     private static List<Spatial> resultListSpatials = new ArrayList<Spatial>();
     
@@ -166,7 +166,7 @@ public class Util
 		return resultListSpatials;
 	}
 	//---------------------------------------------
-	*/
+	// */
 	
 	
 	public static void setFaceCullMode(Spatial spatial, FaceCullMode mode)

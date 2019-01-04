@@ -1,0 +1,5 @@
+Driver: TestDriver
+Driving Task: Task_1.xml
+Start Time: 2019-01-04 14:57:12.499
+
+2019-01-04 14:57:27.816 --> Auto Pilot on

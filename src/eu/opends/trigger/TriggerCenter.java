@@ -101,8 +101,8 @@ public class TriggerCenter
 		String tempSpatialName;
 
 		//-----------------------
-		List<Spatial> tempList = sim.getTriggerNode().getChildren();
-		//List<Spatial> tempList = Util.getAllSpatials(sim.getTriggerNode());
+		//List<Spatial> tempList = sim.getTriggerNode().getChildren();
+		List<Spatial> tempList = Util.getAllSpatials(sim.getTriggerNode());
 		//-----------------------
 		
 		for (Iterator<Spatial> it = tempList.iterator(); it.hasNext();) 

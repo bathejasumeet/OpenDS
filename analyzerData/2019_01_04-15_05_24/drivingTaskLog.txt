@@ -1,0 +1,14 @@
+Driver: TestDriver
+Driving Task: village.xml
+Start Time: 2019-01-04 15:05:32.850
+
+2019-01-04 15:06:13.555 --> Auto Pilot on
+2019-01-04 15:06:48.161 --> Auto Pilot off
+2019-01-04 15:07:13.551 --> Auto Pilot on
+2019-01-04 15:07:15.552 --> Auto Pilot off
+2019-01-04 15:07:17.948 --> Auto Pilot on
+2019-01-04 15:07:18.838 --> Auto Pilot off
+2019-01-04 15:07:34.010 --> Auto Pilot on
+2019-01-04 15:07:34.683 --> Auto Pilot off
+2019-01-04 15:08:04.799 --> Auto Pilot on
+2019-01-04 15:08:07.917 --> Auto Pilot off

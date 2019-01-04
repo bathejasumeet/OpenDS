@@ -76,7 +76,7 @@
 				<maxDistanceFromPath>5.0</maxDistanceFromPath>
 				<curveTension>0.001</curveTension>
 				<pathIsCycle>true</pathIsCycle>
-				<pathIsVisible>false</pathIsVisible>
+				<pathIsVisible>true</pathIsVisible>
 				<startWayPoint>WayPoint_1</startWayPoint>
 				<wayPoints>
 					<wayPoint id="WayPoint_1">

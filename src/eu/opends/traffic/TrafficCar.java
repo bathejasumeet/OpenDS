@@ -109,6 +109,7 @@ public class TrafficCar extends Car implements TrafficObject
 		//boundingSphere.setCullHint(CullHint.Always);
 		carNode.attachChild(boundingSphere);
 		sim.getTriggerNode().attachChild(carNode);
+		System.out.println("bounding sphere added");
 		//---------------------------------
 		// */
 		
