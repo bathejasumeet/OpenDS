@@ -3,5 +3,5 @@
 
 #But not these files
 !.gitignore
-!analyzerData/*
-!assets/DrivingTasks/Projects/*
+!*/analyzerData/
+!assets/DrivingTasks/Projects/
