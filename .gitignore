@@ -4,6 +4,7 @@
 #But not these files
 !.gitignore
 !/analyzerData
+!/src
 !/assets
 /assets/*
 !/assets/DrivingTasks
