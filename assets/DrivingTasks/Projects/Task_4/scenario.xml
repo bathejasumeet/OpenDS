@@ -73,7 +73,7 @@
 			<maxDistanceFromPath>5.0</maxDistanceFromPath>
 			<curveTension>0.001</curveTension>
 			<pathIsCycle>true</pathIsCycle>
-			<pathIsVisible>false</pathIsVisible>
+			<pathIsVisible>true</pathIsVisible>
 			<startWayPoint>WayPoint_1</startWayPoint>
 			<wayPoints>
 				<wayPoint id="WayPoint_1"><translation><vector jtype="java_lang_Float" size="3"><entry>-34.72327</entry><entry>0.120547995</entry><entry>812.2758</entry></vector></translation><speed>70</speed></wayPoint>
@@ -85,8 +85,8 @@
 				<wayPoint id="WayPoint_7"><translation><vector jtype="java_lang_Float" size="3"><entry>-33.760365</entry><entry>0.115561865</entry><entry>767.5245</entry></vector></translation><speed>70</speed></wayPoint>
 			</wayPoints>
 		</autoPilot>
-			
-			
+
+
 		</car>
 	</driver>
 
