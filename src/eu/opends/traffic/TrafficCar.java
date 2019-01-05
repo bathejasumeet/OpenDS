@@ -103,12 +103,14 @@ public class TrafficCar extends Car implements TrafficObject
 		// add bounding sphere to a traffic car which can be hit by the user-controlled car
 		Sphere sphere = new Sphere(20, 20, 2.5f);
 		Geometry boundingSphere = new Geometry(name + "_boundingSphere", sphere);
+		System.out.println("car name is " + name +"_boundingSphere");
 		Material boundingSphereMaterial = new Material(sim.getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
 		boundingSphereMaterial.setColor("Color", ColorRGBA.Yellow);
 		boundingSphere.setMaterial(boundingSphereMaterial);
 		//boundingSphere.setCullHint(CullHint.Always);
 		carNode.attachChild(boundingSphere);
 		sim.getTriggerNode().attachChild(carNode);
+		System.out.println("trigger node is " + sim.getTriggerNode());
 		System.out.println("bounding sphere added");
 		//---------------------------------
 		// */
