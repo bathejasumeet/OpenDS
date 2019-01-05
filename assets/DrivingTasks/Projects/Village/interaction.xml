@@ -48,13 +48,12 @@
 	</activities>
 
 	<triggers>
-			<trigger id='carProximityCheck1' priority='1'>
+			<trigger id="tooCloseToCar1" priority="1">
 				<activities>
 					<activity id="showWarningText">
-						<action id='sendMessage' delay="0" repeat="0">
-							<parameter name="text" value="Too close to car 1">
-								<parameter name="duration" value="3"></parameter>
-							</parameter>
+						<action id="sendMessage" delay="0" repeat="1">
+							<parameter name="text" value="Too close to car 1" />
+								<parameter name="duration" value="3" />
 						</action>
 					</activity>
 				</activities>

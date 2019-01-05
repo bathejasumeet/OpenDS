@@ -32,6 +32,7 @@ import com.jme3.math.Quaternion;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
+import com.jme3.scene.Spatial.CullHint;
 import com.jme3.scene.shape.Box;
 import com.jme3.scene.shape.Sphere;
 import com.jme3.texture.Texture;
@@ -98,20 +99,21 @@ public class TrafficCar extends Car implements TrafficObject
 		init(name);
 
 		
-		// /*
+		 /*
 		//---------------------------------
 		// add bounding sphere to a traffic car which can be hit by the user-controlled car
 		Sphere sphere = new Sphere(20, 20, 2.5f);
+		System.out.println("name is " + name+ "_boundingSphere");
 		Geometry boundingSphere = new Geometry(name + "_boundingSphere", sphere);
 		Material boundingSphereMaterial = new Material(sim.getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
 		boundingSphereMaterial.setColor("Color", ColorRGBA.Yellow);
 		boundingSphere.setMaterial(boundingSphereMaterial);
-		//boundingSphere.setCullHint(CullHint.Always);
+		boundingSphere.setCullHint(CullHint.Always);
 		carNode.attachChild(boundingSphere);
 		sim.getTriggerNode().attachChild(carNode);
 		System.out.println("bounding sphere added");
 		//---------------------------------
-		// */
+		 */
 		
 		followBox = new FollowBox(sim, this, trafficCarData.getFollowBoxSettings(), true, true);
 		
